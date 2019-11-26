@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Hobbies & Activities</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#back{
+			text-align: center;
+			border: 6px solid #1C6EA4;
+			background-color: rgb(199, 153, 4);
+			width:800px;
+			box-shadow: 2px 2px 7px 1px #1C6EA4;
+			margin:auto;
+		}
+		#content{
+			
+			color: #FFF;
+			background-color: #333;
+			text-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+			text-align : center;
+
+		}
+		#books{
+			color:#fff;
+			font-family: open-sans,sans-serif;
+			font-size: 20px;
+			text-align: center;
+		}
+		#movies{
+			color:#fff;
+			font-family: open-sans,sans-serif;
+			font-size: 20px;
+			text-align: center;
+		}
+		#artists{
+			color:#fff;
+			font-family: open-sans,sans-serif;
+			font-size: 20px;
+			text-align: center;
+		}
+		#sports{
+			color:#fff;
+			font-family: open-sans,sans-serif;
+			font-size: 20px;
+			text-align: center;
+		}
+		#games{
+			color:#fff;
+			font-family: open-sans,sans-serif;
+			font-size: 20px;
+			text-align: center;
+		}
+		#pastimes{
+			color:#fff;
+			font-family: open-sans,sans-serif;
+			font-size: 20px;
+			text-align: center;	
+		}
+
+		.fav-books{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			color: #e0dfdc;
+			/*background-color: #567;*/
+			letter-spacing: .1em;
+			text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+			/*padding-left: 40px;*/
+			text-decoration: underline rgb(68, 68, 68);
+		}
+		.fav-movies{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			color: #e0dfdc;
+			/*background-color: #567;*/
+			letter-spacing: .1em;
+			text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+			/*padding-left: 40px;*/
+			text-decoration: underline rgb(68, 68, 68);
+		}
+		.fav-artists{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			color: #e0dfdc;
+			/*background-color: #567;*/
+			letter-spacing: .1em;
+			text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+			/*padding-left: 40px;*/
+			text-decoration: underline rgb(68, 68, 68);
+		}
+		.fav-sports{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			color: #e0dfdc;
+			/*background-color: #567;*/
+			letter-spacing: .1em;
+			text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+			/*padding-left: 40px;*/
+			text-decoration: underline rgb(68, 68, 68);
+		}
+		.fav-games{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			color: #e0dfdc;
+			/*background-color: #567;*/
+			letter-spacing: .1em;
+			text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+			/*padding-left: 40px;*/
+			text-decoration: underline rgb(68, 68, 68);
+		}
+		.fav-pastimes{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			color: #e0dfdc;
+			/*background-color: #567;*/
+			letter-spacing: .1em;
+			text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+			/*padding-left: 40px;*/
+			text-decoration: underline rgb(68, 68, 68);
+		}
+		.names{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			/*font-family: Georgia, serif;*/
+			font-size: 22px;
+			letter-spacing: 0px;
+			word-spacing: 2px;
+			color: rgb(red, green, blue);
+			font-weight: 700;
+			text-decoration: rgb(68, 68, 68);
+			font-style: normal;
+			font-variant: small-caps;
+			text-transform: uppercase;
+			text-shadow: 1px 2px 2px #1C6EA4;
+		}
+		#container{
+			color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 10px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+			background: #1C6EA4;
+			background: #144E75;
+			
+			font-size: 10px;
+			margin: right;
+		}
+			
+	</style>
+</head>
+
+
+
+
+<body>
+	<div id="back">
+
+
+			<div id="content">
+					<h1 class="hobby">Hobbies and Activities</h1>
+			</div>
+				<div id="books">
+					<h2 class="fav-books">Favorite Books</h2>
+					<br\>
+						<ol class="names">
+							<img src="books-got.jpg" width="300" height="300" />
+							<li>Game of Thrones </li>
+							<br/>
+							<img src="books-romeo.jpg" width="300" height="300"/>
+							<li>Romeo & Juliet </li>
+							<br/>
+							<img src="books-hungergames.jpg" width="300" height="300"/>
+							<li>The Hunger Games</li>
+							<br/>
+						</ol>
+				
+				</div>
+
+				<br\>
+				
+				<div id="movies">
+					<h2 class="fav-movies">Favorite Movies</h2>
+					<br\>
+					<ol class="names">
+						<img src="harry-potter.jpg" width="300" height="300" />
+						<li>Harry Potter</li>
+						<br/>
+						<img src="notebook.jpg" width="300" height="300"/>
+						<li>The Notebook</li>
+						<br/>
+						<img src="keith.jpg" width="300" height="300"/>
+						<li>keith</li>
+						<br/>
+					</ol>
+				</div>
+
+				<br\>
+				
+				<div id="artists"> 
+					<h2 class="fav-artists">Favorite Artists</h2>
+				
+					<ol class="names">
+						<img src="post-malone.jpg" width="300" height="300"/>
+						<li>Post Malone</li>
+						<br/>
+						<img src="freddie.jpg" width="300px" height="300px" /> 
+						<li>Freddy Mercurie</li>
+						<br/>
+						<img src="john-lennon.jpg" width="300" height="300"/>
+						<li>John Lenon</li>
+						<br/>
+					</ol>
+				</div>
+
+				<br\>
+				
+				<div id="sports">
+					<h2 class="fav-sports">Favorite Sports</h2>
+					<ol class="names">
+						<img src="esports.png" width="300" height="300"/>
+						<li>Esports</li>
+						<br/>
+						<img src="tennis.jpg" width="300" height="300"/>
+						<li>Tennis</li>
+						<br/>
+						<img src="cram.jpg" width="300" height="300"/>
+						<li>Cram</li>
+						<br/>
+					</ol>
+				</div>
+
+				<br\>
+				
+				<div id="games">
+					<h2 class="fav-games">Favorite Games</h2>
+					<ol class="names">
+						<img src="r6.jpg" width="300" height="300"/>
+						<li>Rainbow Six Siege</li>
+						<br/>
+						<img src="for-honor.jpg" width="300" height="300"/>
+						<li>For Honor</li>
+						<br/>
+						<img src="fortnite.jpg" width="300px" height="300px"/>
+						<li>Fortnite</li>
+						<br/>
+					</ol>
+				</div>
+
+				<br\>
+				
+				<div id="pastimes">
+					<h2 class="fav-pastimes">Favorite Pastimes</h2>
+					<div>
+						
+					</div>
+					<ol class="names">
+						<img src="reading.jpg" width="300px" height="300px"/>
+						<li>Reading books</li>
+						<br/>
+						<img src="hangout.jpg" width="300px" height="300px"/>
+						<li>Hangout</li>
+						<br/>
+						<img src="music.jpg" width="300px" height="300px"/>
+						<li>Listening to music</li>
+						<br/>
+					</ol>
+				</div>
+				<div id="container">
+						<h1><a href="index.html"> profile </a></h1>
+					</div>
+
+	</div>
+
+</div>
+</body>
+</html>
